@@ -1,0 +1,495 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* PRIMEIRA SEÇÃO */
+.pagina1 {
+  background: url('assets/background-pagina1.png') no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-family: 'Beckman', sans-serif;
+  font-weight: normal;
+  font-size: 5.8rem;
+  text-transform: uppercase;
+  color: #173F63;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  font-family: 'Century Gothic', sans-serif;
+  font-style: italic;
+  font-size: 2.8rem;
+  color: #173F63;
+  margin-top: -30px;
+}
+
+/* QUEM É */
+.quem-e {
+  background: url('assets/Background.png') no-repeat center center/cover;
+  padding: 100px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.texto {
+  flex: 1.2;
+  min-width: 320px;
+}
+
+.subtitulo-sec {
+  font-family: 'Martel Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #787878;
+  margin-bottom: -24px;
+}
+
+.titulo-sec {
+  font-family: 'Faustina', serif;
+  font-weight: 400;
+  font-size: 7rem;
+  color: #173F63;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.descricao {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #081B2C;
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.imagem {
+  flex: 0.9;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.foto-fernando {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+}
+
+/* SEÇÃO VÍDEO */
+.secao-video {
+  background: url('assets/Background.png') no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 40px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.chamada {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 2rem;
+  color: #081B2C;
+  margin-bottom: 30px;
+}
+
+.botao-matricula {
+  background-color: #F4B731;
+  color: #081B2C;
+  font-size: 1.5rem;
+  font-family: 'Martel Sans', sans-serif;
+  padding: 15px 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.botao-matricula:hover {
+  transform: scale(1.05);
+}
+
+/* SEÇÃO MÓDULOS */
+.area-modulo {
+  background-color: #081B2C;
+  color: #ffffff;
+  padding: 100px 20px;
+}
+
+.container-curso {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-curso {
+  font-family: 'Faustina', serif;
+  font-size: 3.5rem;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 3px solid #F4B731;
+  padding-bottom: 8px;
+}
+
+.texto-curso {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #E5E5E5;
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.texto-curso .destaque {
+  color: #E5E5E5;
+  border-bottom: 2px solid #F4B731;
+  font-weight: 600;
+}
+
+.grade-modulos {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.linha-modulo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  gap: 40px;
+  width: 100%;
+}
+
+.col-esquerda {
+  font-family: 'Faustina', serif;
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.col-direita {
+  font-family: 'Martel Sans', sans-serif;
+  text-align: left;
+}
+
+.topico {
+  display: block;
+  border-bottom: 2px solid #F4B731;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: normal;
+  position: relative;
+}
+
+.topico span {
+  font-weight: bold;
+  background-color: #081B2C;
+  padding-right: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.col-direita ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* SEÇÃO BOTÃO INSCRIÇÃO */
+.inscricao {
+  background: url('assets/Background.png') no-repeat center center/cover;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.botao-inscricao {
+  background-color: #F4B731;
+  color: #081B2C;
+  font-size: 1.5rem;
+  font-family: 'Martel Sans', sans-serif;
+  padding: 15px 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.botao-inscricao:hover {
+  transform: scale(1.05);
+}
+
+/* SEÇÃO DEPOIMENTOS */
+.titulo-depoimentos-wrapper {
+  background-color: #081B2C;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo-depoimentos {
+  font-family: 'Faustina', serif;
+  font-size: 3rem;
+  color: white;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/* Carrossel com alinhamento centralizado */
+.depoimentos-videos {
+  background-color: #fff;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-videos {
+  grid-column: content-start / content-end;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.carousel-videos::-webkit-scrollbar {
+  display: none;
+}
+
+.video-card {
+  flex: 0 0 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 9 / 16; /* <-- DEFINA AQUI */
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* opcional para preencher sem distorção */
+}
+
+/* Setas de navegação */
+.seta {
+  background: none;          /* remove o círculo */
+  border: none;
+  color: #081B2C;            /* cor da seta */
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+.seta:hover {
+  transform: translateY(-50%) scale(1.2); /* suave ao passar o mouse */
+}
+
+.seta-esquerda {
+  left: 0;
+}
+
+.seta-direita {
+  right: 0;
+}
+
+.diferencial-curso {
+  background-color: #F7D46CBF;
+  padding: 80px 20px;
+}
+
+.container-diferencial {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-diferencial {
+  font-family: 'Faustina', serif;
+  font-size: 4.2rem; /* Figma usa uma fonte maior */
+  color: #173F63;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Linha azul grossa saindo da extrema esquerda até o fim da palavra 'curso' */
+.titulo-diferencial::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* distância abaixo do texto */
+  left: 0;
+  height: 8px; /* mais grosso */
+  width: 100%;
+  background-color: #173F63;
+}
+
+.lista-diferenciais {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+}
+
+.lista-diferenciais li {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #173F63;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.7;
+  max-width: 900px;
+}
+
+/* Ícone de check */
+.lista-diferenciais img {
+  width: 24px;
+  height: auto;
+  margin-top: 4px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto {
+    margin-bottom: 30px;
+  }
+
+  .titulo-sec {
+    font-size: 2.6rem;
+  }
+
+  .descricao {
+    text-align: center;
+  }
+
+  .img-wrapper {
+    max-width: 300px;
+  }
+
+  .linha-modulo {
+    grid-template-columns: 1fr;
+  }
+
+  .col-esquerda {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .col-direita {
+    text-align: center;
+  }
+
+  .col-direita ul {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .carousel-videos iframe {
+    flex: 0 0 90%;
+    height: 400px;
+  }
+
+  .video-card {
+  flex: 0 0 85%;
+  aspect-ratio: 9 / 16;
+}
+
+  .seta {
+    font-size: 2rem;
+    padding: 8px 14px;
+  }
+}
