@@ -680,8 +680,23 @@ body {
     display: none;
   }
 
-  .navbar-links {
-    flex-direction: column;
-    gap: 6px;
-  }
+.navbar-links {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+}
+
+.navbar-links li {
+  margin: 0 4px;
+}
+
+.navbar-links a {
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  white-space: nowrap;
+}
+
 }
