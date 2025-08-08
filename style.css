@@ -685,18 +685,22 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   padding: 6px;
 }
 
 .navbar-links li {
-  margin: 0 4px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
 }
 
-.navbar-links a {
-  font-size: 0.8rem;
-  padding: 4px 6px;
-  white-space: nowrap;
+/* Ajuste para os separadores | */
+.navbar-links li .barra {
+  display: inline;
+  margin: 0 4px;
+  color: #ffffffb3; /* opcional: cor mais clara */
+  font-size: 0.9rem;
 }
 
 }
