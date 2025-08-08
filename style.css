@@ -556,4 +556,33 @@ body {
   .seta {
     display: none; /* Opcional: remove setas no mobile */
   }
+
+  .container-quem-e {
+    flex-direction: row; /* força lado a lado */
+    align-items: flex-start;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .container-quem-e .texto {
+    font-size: 0.9rem;
+    flex: 1;
+  }
+
+  .container-quem-e .imagem {
+    flex: 0 0 130px;
+  }
+
+  .container-quem-e .foto-fernando {
+    width: 100%;
+    height: auto;
+  }
+
+  .titulo-sec {
+    font-size: 1.8rem;
+  }
+
+  .descricao {
+    font-size: 1rem;
+  }
 }
