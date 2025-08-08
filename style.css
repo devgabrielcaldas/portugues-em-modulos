@@ -493,3 +493,43 @@ body {
     padding: 8px 14px;
   }
 }
+
+/* Por padrão, só mostra a versão desktop */
+.linha-mobile {
+  display: none;
+}
+
+.linha-desktop {
+  display: inline;
+}
+
+/* Tudo agrupado para telas pequenas */
+@media (max-width: 600px) {
+  .conteudo-principal {
+    padding: 40px 20px;
+  }
+
+  .logo-img {
+    width: 200px;
+  }
+
+  .titulo {
+    font-size: 2.4rem;
+    line-height: 1.3;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .subtitulo {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+
+  .linha-desktop {
+    display: none;
+  }
+
+  .linha-mobile {
+    display: inline;
+  }
+}
