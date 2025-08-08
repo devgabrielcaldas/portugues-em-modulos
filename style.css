@@ -505,6 +505,7 @@ body {
 
 /* Tudo agrupado para telas pequenas */
 @media (max-width: 600px) {
+
   .conteudo-principal {
     padding: 40px 20px;
   }
@@ -557,32 +558,73 @@ body {
     display: none; /* Opcional: remove setas no mobile */
   }
 
-  .container-quem-e {
-    flex-direction: row; /* força lado a lado */
-    align-items: flex-start;
-    gap: 16px;
-    text-align: left;
+    .container-quem-e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
   }
 
   .container-quem-e .texto {
-    font-size: 0.9rem;
-    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .subtitulo-sec {
+    margin-bottom: -10px; /* espaço entre "Quem é" e "Fernando César" */
+  }
+
+  .titulo-sec {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 auto 20px auto;
+  display: inline-block;
+  white-space: nowrap; /* força tudo na mesma linha */
+}
+
+  .descricao {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .container-quem-e .imagem {
-    flex: 0 0 130px;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto; /* centraliza horizontalmente */
   }
 
   .container-quem-e .foto-fernando {
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .titulo-sec {
     font-size: 1.8rem;
+    line-height: 1.2;
   }
 
   .descricao {
     font-size: 1rem;
+    line-height: 1.5;
   }
+
+  .titulo-sec .nome {
+  font-size: 3.4rem;
+  white-space: nowrap;
+}
+
+.titulo-sec .mobile-break {
+  display: none;
+}
+
+.container-quem-e .descricao {
+  text-align: justify;
+  padding-inline: 10px;
+}
 }
