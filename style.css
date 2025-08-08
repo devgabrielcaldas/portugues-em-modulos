@@ -532,4 +532,28 @@ body {
   .linha-mobile {
     display: inline;
   }
+
+  .carousel-videos {
+    gap: 10px;
+    padding-inline: 10px;
+  }
+
+  .video-card {
+    flex: 0 0 48%; /* Dois cards lado a lado com espaçamento */
+    aspect-ratio: 9 / 16;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-card iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    display: block;
+  }
+
+  .seta {
+    display: none; /* Opcional: remove setas no mobile */
+  }
 }
