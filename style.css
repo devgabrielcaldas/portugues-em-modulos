@@ -579,12 +579,12 @@ body {
   }
 
   .titulo-sec {
-  font-size: 2.3rem; /* ou até 2.2rem se quiser garantir */
-  line-height: 1.2;
-  margin: 0 auto 20px auto;
-  display: block; /* garante centralização sem problemas */
-  white-space: normal; /* permite quebra se necessário */
-  text-align: center;
+  font-size: 2.3rem !important;
+  line-height: 1.2 !important;
+  margin: 0 auto 20px auto !important;
+  display: block !important;
+  white-space: normal !important;
+  text-align: center !important;
 }
 
   .descricao {
