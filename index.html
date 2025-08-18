@@ -8,37 +8,57 @@
     <!-- Fonte Beckman Free -->
     <link href="https://fonts.cdnfonts.com/css/beckman" rel="stylesheet">
     <!-- Fonte Century Gothic (usaremos fallback semelhante) -->
-    <link href="https://fonts.googleapis.com/css2?family=Century+Gothic:ital@1&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Century+Gothic:ital@1&display=swap" rel="stylesheet"> -->
     <!-- Fonte Martel Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400&family=Martel+Sans:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@700&family=Martel+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="navbar">
-    <nav>
-        <ul class="navbar-links">
-        <li><a href="#quem-e">Quem é Fernando César</a></li>
-        <li><span class="barra">|</span></li>
-        <li><a href="#curso">Conheça o Curso</a></li>
-        <li><span class="barra">|</span></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><span class="barra">|</span></li>
-        <li><a href="#diferencial">Diferencial do Curso</a></li>
-        <li><span class="barra">|</span></li>
-        <li>
-        <a
-            href="https://seudominio.com/pagina-do-curso"
-            class="inscreva-se"
-            target="_blank"
-            rel="noopener"
-            >
-            Inscreva-se
-            </a>
-        </li>
-        </ul>
-    </nav>
+        <button class="hamburger" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>    
+        <nav>
+            <ul class="navbar-links">
+            <li><a href="#quem-e">Quem é Fernando César</a></li>
+            <li><span class="barra">|</span></li>
+            <li><a href="#curso">Conheça o Curso</a></li>
+            <li><span class="barra">|</span></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><span class="barra">|</span></li>
+            <li><a href="#diferencial">Diferencial do Curso</a></li>
+            <li><span class="barra">|</span></li>
+            <li>
+            <a
+                href="https://seudominio.com/pagina-do-curso"
+                class="inscreva-se"
+                target="_blank"
+                rel="noopener"
+                >
+                Inscreva-se
+                </a>
+            </li>
+            </ul>
+        </nav>
+        <aside id="mobileMenu" class="mobile-drawer" aria-hidden="true">
+        <button class="drawer-close" aria-label="Fechar menu">&times;</button>
+            <ul class="drawer-links">
+                <li><a href="#quem-e">Quem é Fernando César</a></li>
+                <li><a href="#curso">Conheça o Curso</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#diferencial">Diferencial do Curso</a></li>
+                <li>
+                <a href="https://seudominio.com/pagina-do-curso" class="inscreva-se" target="_blank" rel="noopener">
+                    Inscreva-se
+                </a>
+                </li>
+            </ul>
+        </aside>
+        <div id="backdrop" class="backdrop" hidden></div>
     </header>   
+
     <!-- PRIMEIRA SEÇÃO -->
     <section class="pagina1">
         <div class="conteudo-principal">

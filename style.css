@@ -35,7 +35,7 @@ body {
 }
 
 .titulo {
-  font-family: 'Beckman', sans-serif;
+  font-family: 'Beckman', 'Beckman Free', sans-serif;
   font-weight: normal;
   font-size: 5.8rem;
   text-transform: uppercase;
@@ -44,7 +44,7 @@ body {
 }
 
 .subtitulo {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Martel Sans', sans-serif;
   font-style: italic;
   font-size: 2.8rem;
   color: #173F63;
@@ -54,7 +54,7 @@ body {
 /* QUEM É */
 .quem-e {
   background: url('assets/Background.png') no-repeat center center/cover;
-  padding: 100px 60px;
+  padding: 60px 16px;
   display: flex;
   justify-content: center;
 }
@@ -487,6 +487,98 @@ body {
   padding: 0 5px;
 }
 
+/* Botão hambúrguer (esconde no desktop por padrão) */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: 0;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff;
+  width: 100%;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Drawer lateral */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -80%;
+  width: 80%;
+  max-width: 340px;
+  height: 100%;
+  background: #081B2C;
+  box-shadow: -6px 0 16px rgba(0,0,0,0.3);
+  z-index: 1001;
+  padding: 24px 20px;
+  transition: right 0.25s ease;
+}
+
+.mobile-drawer.open {
+  right: 0;
+}
+
+.drawer-close {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.drawer-links {
+  list-style: none;
+  margin: 40px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.drawer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.1rem;
+  padding: 10px 4px;
+  display: inline-block;
+}
+
+.drawer-links a.inscreva-se {
+  background: #F4B731;
+  color: #081B2C;
+  border-radius: 4px;
+  padding: 12px 14px;
+  font-weight: 600;
+}
+
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1000;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 /* RESPONSIVO */
 @media (max-width: 900px) {
   .container {
@@ -554,6 +646,8 @@ body {
 .linha-desktop {
   display: inline;
 }
+
+
 
 /* Tudo agrupado para telas pequenas */
 @media (max-width: 600px) {
@@ -639,11 +733,6 @@ body {
   text-align: center !important;
 }
 
-  .descricao {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
   .container-quem-e .imagem {
     max-width: 240px;
     width: 100%;
@@ -695,12 +784,25 @@ body {
   font-size: 0.8rem;
 }
 
-/* Ajuste para os separadores | */
-.navbar-links li .barra {
-  display: inline;
-  margin: 0 4px;
-  color: #ffffffb3; /* opcional: cor mais clara */
-  font-size: 0.9rem;
+/* Mostra o hambúrguer no mobile */
+.hamburger {
+  display: block;
 }
+
+/* Esconde a navbar horizontal no mobile */
+.navbar nav,
+.navbar .navbar-links {
+  display: none !important;
+}
+
+/* Opcional: reduzir altura da navbar para o mobile, caso queira */
+.navbar {
+  padding: 18px 0;
+}
+
+/* (CONFLITO) — Se você mantiver separadores '|' no mobile,
+   REMOVA QUALQUER regra que mostre .barra no mobile.
+   Deixe .barra escondida para evitar poluição visual do drawer. */
+.barra { display: none !important; }
 
 }
