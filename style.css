@@ -178,11 +178,11 @@ body {
   font-family: 'Faustina', serif;
   font-size: 3.5rem;
   color: #FFFFFF;
-  margin-bottom: 40px;
-  position: relative;
+  margin-bottom: 32px;
+  position: underline;
   display: inline-block;
   border-bottom: 3px solid #F4B731;
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
 
 .texto-curso {
@@ -197,8 +197,11 @@ body {
 
 .texto-curso .destaque {
   color: #E5E5E5;
-  border-bottom: 2px solid #F4B731;
-  font-weight: 600;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #F4B731;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;   /* bem próximo do texto */
 }
 
 .grade-modulos {
