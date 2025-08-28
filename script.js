@@ -75,3 +75,18 @@
         container.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
     };
     })();
+
+    // ----- FAQ (accordion) -----
+    const faqItems = document.querySelectorAll('.faq-item .faq-question');
+
+    faqItems.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const li = btn.closest('.faq-item');
+        const answer = li.querySelector('.faq-answer');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+        // alterna apenas este item (podemos permitir múltiplos abertos)
+        li.classList.toggle('open', !expanded);
+        btn.setAttribute('aria-expanded', String(!expanded));
+    });
+    });
