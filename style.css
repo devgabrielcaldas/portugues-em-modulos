@@ -536,7 +536,7 @@ body {
 .mobile-drawer {
   position: fixed;
   top: 0;
-  right: -80%;
+  right: 0;
   width: 80%;
   max-width: 340px;
   height: 100%;
@@ -545,6 +545,11 @@ body {
   z-index: 1001;
   padding: 24px 20px;
   transition: right 0.25s ease;
+
+  /* FICA FORA DA TELA SEM MEXER NA LARGURA DO DOCUMENTO */
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+  will-change: transform;
 }
 
 .mobile-drawer.open {
@@ -702,7 +707,7 @@ body.no-scroll {
   /* Evita que a página “escorregue” para o lado */
   html, body { overflow-x: hidden; }
 
-  img, iframe, .video-container, .foto-fernando {
+  img, iframe, .foto-fernando {
     max-width: 100%;
   }
 
@@ -763,6 +768,27 @@ body.no-scroll {
     font-size: 2rem;
     padding: 8px 14px;
   }
+
+    /* Centraliza de forma consistente a seção "Quem é" em telas 601–900px */
+  .container-quem-e {
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  /* Sobrescreve o justify-content:flex-end da versão desktop */
+  .container-quem-e .imagem,
+  .imagem {
+    justify-content: center;
+    margin: 0 auto;   /* garante centro mesmo com gaps */
+  }
+
+  .container-quem-e .descricao {
+    margin-inline: auto;
+    text-align: justify;
+  }
+
+  .container-quem-e .texto { max-width: 620px; margin-inline:auto; }
 }
 
 /* Por padrão, só mostra a versão desktop */
