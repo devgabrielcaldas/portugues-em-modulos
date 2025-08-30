@@ -104,7 +104,7 @@ body {
   flex: 0.9;
   display: flex;
   justify-content: flex-end;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .foto-fernando {
@@ -699,6 +699,13 @@ body.no-scroll {
   background: #FFFFFF !important;
 }
 
+  /* Evita que a página “escorregue” para o lado */
+  html, body { overflow-x: hidden; }
+
+  img, iframe, .video-container, .foto-fernando {
+    max-width: 100%;
+  }
+
 /* RESPONSIVO */
 @media (max-width: 900px) {
   .container {
@@ -806,7 +813,7 @@ body.no-scroll {
   }
 
   .video-card {
-    flex: 0 0 48%; /* Dois cards lado a lado com espaçamento */
+    flex: 0 0 calc(50% - 10px); /* Dois cards lado a lado com espaçamento */
     aspect-ratio: 9 / 16;
     padding: 0;
     margin: 0;
@@ -927,5 +934,55 @@ body.no-scroll {
 
 .faq-title { font-size: 2.2rem; }
 .faq-question-text { font-size: 1.2rem; }
+
+}
+
+/* Centralização rígida da seção "Quem é" em telas ~360–412px */
+@media (max-width: 430px) {
+  .quem-e { padding: 48px 16px; }
+
+  .container-quem-e {
+    max-width: 620px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* força central */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .container-quem-e .texto,
+  .container-quem-e .imagem {
+    width: 100%;
+    flex: none;            /* evita sobrar “frações” de flex */
+  }
+
+  .container-quem-e .imagem {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;        /* zera qualquer auto anterior */
+  }
+
+  .foto-fernando { max-width: 240px; height: auto; }
+
+  .titulo-sec {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    margin: 0 auto 20px auto;
+    display: block;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;  /* quebra segura, se precisar */
+  }
+
+  .descricao {
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: justify;
+  }
+
+  .carousel-videos { gap: 8px; padding-inline: 8px; }
+  .video-card { flex: 0 0 calc(50% - 8px); }
+
 
 }
