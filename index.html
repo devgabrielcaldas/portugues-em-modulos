@@ -22,9 +22,9 @@
         </button>    
         <nav>
             <ul class="navbar-links">
-            <li><a href="#quem-e">Quem é Fernando César</a></li>
-            <li><span class="barra">|</span></li>
             <li><a href="#curso">Conheça o Curso</a></li>
+            <li><span class="barra">|</span></li>
+            <li><a href="#quem-e">Quem é Fernando César</a></li>
             <li><span class="barra">|</span></li>
             <li><a href="#depoimentos">Depoimentos</a></li>
             <li><span class="barra">|</span></li>
@@ -45,8 +45,8 @@
         <aside id="mobileMenu" class="mobile-drawer" aria-hidden="true">
         <button class="drawer-close" aria-label="Fechar menu">&times;</button>
             <ul class="drawer-links">
-                <li><a href="#quem-e">Quem é Fernando César</a></li>
                 <li><a href="#curso">Conheça o Curso</a></li>
+                <li><a href="#quem-e">Quem é Fernando César</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#diferencial">Diferencial do Curso</a></li>
                 <li>
@@ -61,15 +61,84 @@
 
     <!-- PRIMEIRA SEÇÃO -->
     <section class="pagina1">
-        <div class="conteudo-principal">
-            <img src="assets/logo.png" alt="Logo Português em Módulos" class="logo-img">
-                <h1 class="titulo">
-                <span class="linha-desktop">PORTUGUÊS EM MÓDULOS</span>
-                <span class="linha-mobile">
-                    PORTUGUÊS EM<br>MÓDULOS
-                </span>
-                </h1>
-            <p class="subtitulo">Prof. Fernando César</p>
+        <div class="hero-bg"></div>
+
+        <div class="hero-container">
+            <div class="hero-esquerda">
+                <img src="assets/logo-2.png" alt="Logo Português em Módulos" class="hero-logo">
+
+                <div class="hero-texto">
+                    <h1 class="hero-titulo">
+                        <span class="hero-titulo-linha1">Transforme regras</span><br>
+                        em resultados.
+                    </h1>
+                    <p class="hero-subtitulo">Domine o Português!</p>
+                </div>
+            </div>
+
+            <div class="hero-direita">
+                <img src="assets/foto-profissional.png" alt="Professor Fernando César" class="hero-professor">
+            </div>
+        </div>
+
+        <img
+            src="assets/elemento-entrada-pagina.png"
+            alt=""
+            class="hero-elemento-canto"
+            aria-hidden="true"
+        >
+    </section>
+
+    <!-- SEGUNDA SEÇÃO -->
+    <section class="area-modulo" id="curso">
+        <div class="container-curso">
+            <h2 class="titulo-curso">Conheça Português em Módulos</h2>
+            <p class="texto-curso">
+            O curso Português em Módulos é destinado a estudantes que se preparam para vestibulares, concursos públicos e a quem pretende aprofundar o estudo da língua. Com uma estrutura dividida <span class="destaque">em blocos</span>, o curso facilita o aprendizado e garante uma evolução contínua.
+            <br><br>
+            O estudante não só dominará conceitos básicos da língua portuguesa para resolver questões de diversas bancas e gabaritar essa disciplina, mas conquistará pré-requisitos mais relevantes para uma comunicação correta e precisa por meio da <span class="destaque">metodologia exclusiva dos cursos.</span>
+            </p>
+        
+            <h2 class="titulo-produtos">Produtos disponíveis</h2>
+        </div>
+
+        <div class="cards-cursos">
+
+        <!-- CARD 1 -->
+        <div class="card-curso">
+            <div class="card-top">
+            <img src="assets/agenda.png" alt="" class="icone-livro" aria-hidden="true">
+                <h3>
+                    <span class="titulo-branco">Sintaxe:</span>
+                    <span class="titulo-destaque">Período Simples</span>
+                </h3>
+            </div>
+            <a href="periodoSimples.html" class="btn-saiba">Saiba mais</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-curso">
+            <div class="card-top">
+            <img src="assets/agenda.png" alt="" class="icone-livro" aria-hidden="true">
+                <h3>
+                    <span class="titulo-branco">Sintaxe:</span>
+                    <span class="titulo-destaque">Período Composto</span>
+                </h3>
+            </div>
+            <a href="periodoComposto.html" class="btn-saiba">Saiba mais</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO VÍDEO -->
+    <section class="secao-video">
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/NnXx8k2wgX0" 
+                title="Vídeo de apresentação do curso"
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
         </div>
     </section>
 
@@ -77,9 +146,9 @@
     <section class="quem-e" id="quem-e">
     <div class="container container-quem-e">
         <div class="texto">
-        <h3 class="subtitulo-sec">Quem é</h3>
+        <h3 class="subtitulo-sec">Referência em aprovação</h3>
         <h2 class="titulo-sec">
-        <span class="nome">Fernando <span class="mobile-break"><br></span> César</span>
+        <span class="nome">Fernando César</span>
         </h2>
         <p class="descricao">
             Professor de Língua Portuguesa há 30
@@ -97,123 +166,24 @@
         </p>
         </div>
         <div class="imagem">
-        <img src="assets/foto-fernando.png" alt="Professor Fernando César" class="foto-fernando">
+            <img src="assets/foto-fernando.png" alt="Professor Fernando César" class="foto-fernando">
+
+            <a 
+                href="https://www.instagram.com/prof.fernandocesar?igsh=MXR1bzY1OGwxd3Zk" 
+                class="instagram"
+                target="_blank"
+                rel="noopener"
+            >
+                <img src="assets/insta.png" alt="Instagram">
+                <span>@prof.fernandocesar</span>
+            </a>
         </div>
     </div>
     </section>
 
-    <!-- SEÇÃO VÍDEO -->
-    <section class="secao-video">
-        <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/NnXx8k2wgX0" 
-                title="Vídeo de apresentação do curso"
-                frameborder="0" 
-                allowfullscreen>
-            </iframe>
-        </div>
-
-        <p class="chamada">Transforme regras em resultados. <br> Domine o Português!</p>
-
-        <a href="https://pay.hotmart.com/I100571051S" class="botao-matricula">Garanta sua vaga!</a>
-    </section>
-
-    <section class="area-modulo" id="curso">
-  <div class="container-curso">
-    <h2 class="titulo-curso">Conheça o Curso</h2>
-    <p class="texto-curso">
-      O curso Português em Módulos é destinado a estudantes que se preparam para vestibulares, concursos públicos e a quem pretende aprofundar o estudo da língua. <br><br>
-      O estudante não só dominará conceitos básicos da língua portuguesa para resolver questões de diversas bancas e gabaritar essa disciplina, mas <span class="destaque">conquistará pré-requisitos mais relevantes para uma comunicação correta e precisa por meio da <strong>metodologia exclusiva do curso.</strong></span>
-    </p>
-
-    <div class="grade-modulos">
-        <div class="linha-modulo">
-            <div class="col-esquerda">Módulo 1</div>
-            <div class="col-direita">
-            <p class="topico">Tipos de Sujeito</p>
-            <ul>
-                <li>Aula 1: Tipos de Sujeito</li>
-                <li>Aula 2: Resolução de questões</li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="linha-modulo">
-            <div class="col-esquerda">Módulo 2</div>
-            <div class="col-direita">
-            <p class="topico">Predicação Verbal</p>
-            <ul>
-                <li>Aula 3: Predicação Verbal</li>
-                <li>Aula 4: Resolução de questões</li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="linha-modulo">
-            <div class="col-esquerda">Módulo 3</div>
-            <div class="col-direita">
-            <p class="topico">Termos Subordinados ao Verbo</p>
-            <ul>
-                <li>Aula 5: Termos Subordinados ao Verbo</li>
-                <li>Aula 6: Resolução de questões</li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="linha-modulo">
-            <div class="col-esquerda">Módulo 4</div>
-            <div class="col-direita">
-            <p class="topico">Vozes Verbais</p>
-            <ul>
-                <li>Aula 7: Vozes Verbais</li>
-                <li>Aula 8: Resolução de questões</li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="linha-modulo">
-            <div class="col-esquerda">Módulo 5</div>
-            <div class="col-direita">
-            <p class="topico">Funções Sintáticas dos Pronomes Oblíquos</p>
-            <ul>
-                <li>Aula 9: Funções Sintáticas dos Pronomes Oblíquos</li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="linha-modulo">
-            <div class="col-esquerda">Módulo 6</div>
-            <div class="col-direita">
-            <p class="topico">Termos Subordinados ao Nome</p>
-            <ul>
-                <li>Aula 10: Predicativo do Sujeito, Predicativo do Objeto e Aposto</li>
-                <li>Aula 11: Complemento Nominal e Adjunto Adnominal</li>
-                <li>Aula 12: Resolução de questões</li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="linha-modulo">
-            <div class="col-esquerda">Módulo 7</div>
-            <div class="col-direita">
-            <p class="topico">Vocativo</p>
-            <ul>
-                <li>Aula 13: Vocativo</li>
-            </ul>
-            </div>
-        </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- BOTÃO DE INSCRIÇÃO -->
-    <section class="inscricao">
-    <a href="https://pay.hotmart.com/I100571051S" class="botao-inscricao">Quero me inscrever agora!</a>
-    </section>
-
     <!-- TÍTULO COM FUNDO AZUL -->
     <div class="titulo-depoimentos-wrapper" id="depoimentos">
-        <h2 class="titulo-depoimentos">Depoimentos</h2>
+        <h2 class="titulo-depoimentos">O que meus alunos estão dizendo</h2>
     </div>
 
     <!-- SEÇÃO DE VÍDEOS -->
@@ -252,99 +222,163 @@
     </div>
     </section>
 
-    <section class="diferencial-curso" id="diferencial">
-        <div class="container-diferencial">
-            <div class="conteudo-diferencial">
-            <h2 class="titulo-diferencial">Diferencial do curso</h2>
-            <ul class="lista-diferenciais">
-                <li><img src="assets/check.png" alt="check"> Aulas gravadas;</li>
-                <li><img src="assets/check.png" alt="check"> Teoria aprofundada, linguagem acessível, exemplos e explicações didáticas;</li>
-                <li><img src="assets/check.png" alt="check"> Resoluções de questões de diversas bancas;</li>
-                <li><img src="assets/check.png" alt="check"> Gabarito comentado;</li>
-                <li><img src="assets/check.png" alt="check"> Bizus e ênfase às questões mais recorrentes das diversas bancas;</li>
-                <li><img src="assets/check.png" alt="check"> Espaço interativo para dúvidas e comentários;</li>
-                <li><img src="assets/check.png" alt="check"> Curso com certificado.</li>
-            </ul>
+    <section class="bloco-diferencial-oferta" id="diferencial">
+
+        <div class="diferencial-curso">
+            <div class="container-diferencial">
+                <img
+                    src="assets/diferencial-curso.png"
+                    alt="Diferencial do curso"
+                    class="imagem-diferencial-curso imagem-diferencial-desktop"
+                >
+
+                <img
+                    src="assets/diferencial-do-curso-mobile.png"
+                    alt="Diferencial do curso"
+                    class="imagem-diferencial-curso imagem-diferencial-mobile"
+                >
             </div>
         </div>
+
+        <div class="oferta-cursos">
+            <div class="container-oferta-cursos">
+                <div class="card-oferta">
+                    <h3 class="card-oferta-titulo">
+                        <span class="card-oferta-branco">Sintaxe:</span>
+                        <span class="card-oferta-destaque"> Período Simples</span>
+                    </h3>
+
+                    <p class="card-oferta-subtitulo">por apenas</p>
+
+                    <div class="card-oferta-preco">
+                        <span class="preco-parcelas">12x R$</span>
+                        <span class="preco-valor">77</span>
+                        <span class="preco-centavos">,57</span>
+                    </div>
+
+                    <p class="card-oferta-avista">Ou R$ 750,00 à vista</p>
+
+                    <a
+                        href="https://pay.hotmart.com/I100571051S?bid=1775761513802"
+                        class="card-oferta-botao"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Quero garantir essa oferta
+                    </a>
+                </div>
+
+                <div class="card-oferta">
+                    <h3 class="card-oferta-titulo">
+                        <span class="card-oferta-branco">Sintaxe:</span>
+                        <span class="card-oferta-destaque"> Período Composto</span>
+                    </h3>
+
+                    <p class="card-oferta-subtitulo">por apenas</p>
+
+                    <div class="card-oferta-preco">
+                        <span class="preco-parcelas">12x R$</span>
+                        <span class="preco-valor">77</span>
+                        <span class="preco-centavos">,57</span>
+                    </div>
+
+                    <p class="card-oferta-avista">Ou R$ 750,00 à vista</p>
+
+                    <a
+                        href="https://pay.hotmart.com/U104984367I?bid=1775761488993"
+                        class="card-oferta-botao"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Quero garantir essa oferta
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section" id="faq">
+            <h2 class="faq-title">Perguntas Frequentes</h2>
+
+            <ul class="faq-list">
+                <li class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
+                        <span class="faq-question-text">A quem se destina o curso Português em Módulos?</span>
+                        <span class="faq-arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-a3">
+                        <p>O curso se destina a todos estudantes que pretendem assegurar vagas para certames vestibulares, concursos públicos e também a quem visa aprofundar o domínio da língua portuguesa.</p>
+                    </div>
+                </li>
+
+                <li class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
+                        <span class="faq-question-text">Como e quando terei acesso ao curso?</span>
+                        <span class="faq-arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-a3">
+                        <p>O acesso ao curso é liberado de forma imediata após a confirmação do pagamento. Basta acessar o site e fazer seu login (Com e-mail e senha cadastrados). Todo o conteúdo do curso é disponibilizado na área do aluno (Material em PDF e aulas gravadas).</p>
+                    </div>
+                </li>
+
+                <li class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
+                        <span class="faq-question-text">Por quanto tempo terei acesso ao curso?</span>
+                        <span class="faq-arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-a3">
+                        <p>O curso ficará disponível na área do aluno por 12 meses, contados a partir da data de compra. O estudante poderá assistir à aula quantas vezes quiser.</p>
+                    </div>
+                </li>
+
+                <li class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
+                        <span class="faq-question-text">Quais são as formas de pagamento para adquirir o curso?</span>
+                        <span class="faq-arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-a3">
+                        <p>O pagamento pode ser feito via cartão de crédito à vista ou parcelado em até 12 vezes, boleto bancário, pix ou paypal/applepay.</p>
+                    </div>
+                </li>
+
+                <li class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-a2">
+                        <span class="faq-question-text">As aulas serão on-line?</span>
+                        <span class="faq-arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-a2">
+                        <p>Sim. Todo o conteúdo será on-line.</p>
+                    </div>
+                </li>
+
+                <li class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-a1">
+                        <span class="faq-question-text">Como funciona o suporte para eventuais dúvidas?</span>
+                        <span class="faq-arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-a1">
+                        <p>Cada aula contém uma caixa de pergunta/dúvida para ser tratada diretamente com o Professor Fernando César.</p>
+                    </div>
+                </li>
+
+                <li class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
+                        <span class="faq-question-text">Posso fazer o curso morando fora do Brasil?</span>
+                        <span class="faq-arrow" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-a3">
+                        <p>Sim. Você pode acessar a nossa plataforma e adquirir o curso de qualquer lugar do mundo.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <img
+            src="assets/elemento-final-pagina.png"
+            alt=""
+            class="elemento-final"
+            aria-hidden="true"
+        />
     </section>
 
-    <!-- PERGUNTAS FREQUENTES -->
-    <section class="faq-section" id="faq">
-    <h2 class="faq-title">Perguntas Frequentes</h2>
-
-    <ul class="faq-list">
-        <li class="faq-item">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
-            <span class="faq-question-text">A quem se destina o curso Português em Módulos?</span>
-            <span class="faq-arrow" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer" id="faq-a3">
-            <p>O curso se destina a todos estudantes que pretendem assegurar vagas para certames vestibulares, concursos públicos e também a quem visa aprofundar o domínio da língua portuguesa.</p>
-        </div>
-        </li>
-
-        <li class="faq-item">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
-            <span class="faq-question-text">Como e quando terei acesso ao curso?</span>
-            <span class="faq-arrow" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer" id="faq-a3">
-            <p>O acesso ao curso é liberado de forma imediata após a confirmação do pagamento. Basta acessar o site e fazer seu login (Com e-mail e senha cadastrados). Todo o conteúdo do curso é disponibilizado na área do aluno (Material em PDF e aulas gravadas).</p>
-        </div>
-        </li>
-
-        <li class="faq-item">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
-            <span class="faq-question-text">Por quanto tempo terei acesso ao curso?</span>
-            <span class="faq-arrow" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer" id="faq-a3">
-            <p>O curso ficará disponível na área do aluno por 12 meses, contados a partir da data de compra. O estudante poderá assistir à aula quantas vezes quiser.</p>
-        </div>
-        </li>
-
-        <li class="faq-item">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
-            <span class="faq-question-text">Quais são as formas de pagamento para adquirir o curso?</span>
-            <span class="faq-arrow" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer" id="faq-a3">
-            <p>O pagamento pode ser feito via cartão de crédito à vista ou parcelado em até 12 vezes, boleto bancário, pix ou paypal/applepay.</p>
-        </div>
-        </li>
-
-        <li class="faq-item">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq-a2">
-            <span class="faq-question-text">As aulas serão on-line?</span>
-            <span class="faq-arrow" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer" id="faq-a2">
-            <p>Sim. Todo o conteúdo será on-line.</p>
-        </div>
-        </li>
-
-        <li class="faq-item">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq-a1">
-            <span class="faq-question-text">Como funciona o suporte para eventuais dúvidas?</span>
-            <span class="faq-arrow" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer" id="faq-a1">
-            <p>Cada aula contém uma caixa de pergunta/dúvida para ser tratada diretamente com o Professor Fernando César.</p>
-        </div>
-        </li>
-
-        <li class="faq-item">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
-            <span class="faq-question-text">Posso fazer o curso morando fora do Brasil?</span>
-            <span class="faq-arrow" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer" id="faq-a3">
-            <p>Sim. Você pode acessar a nossa plataforma e adquirir o curso de qualquer lugar do mundo.</p>
-        </div>
-        </li>        
-    </ul>
-    </section>
     <script src="script.js"></script> 
     </body>
 </html>
